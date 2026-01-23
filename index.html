@@ -1,16 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yang Chen - Data Scientist</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
-        h1 { color: #333; }
-        p { color: #666; }
+        /* 全局样式 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 简历容器：像一张A4纸一样居中显示 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        /* 头部信息 */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 { margin: 0; color: #2c3e50; }
+        .subtitle { font-size: 1.2em; color: #7f8c8d; margin-top: 5px; }
+        .contact-info { margin-top: 15px; font-size: 0.9em; color: #555; }
+
+        /* 章节标题 */
+        h2 {
+            color: #2980b9;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        /* 职位和学校的小标题 */
+        h3 { margin-bottom: 5px; color: #34495e; }
+        .date-location { float: right; font-weight: normal; font-size: 0.9em; color: #7f8c8d; }
+        
+        /* 列表样式 */
+        ul { margin-top: 5px; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+
+        /* 清除浮动 */
+        .clearfix::after { content: ""; clear: both; display: table; }
+
+        /* 手机端适配 */
+        @media (max-width: 600px) {
+            .date-location { float: none; display: block; }
+            .container { padding: 20px; }
+        }
     </style>
 </head>
 <body>
-    <h1>你好，世界！</h1>
-    <p>这是我在 GitHub 上的第一个个人主页。</p>
-    <p>正在建设中...</p>
+
+<div class="container">
+    <header>
+        <h1>Yang Chen (杨晨)</h1>
+        <div class="subtitle">Data Scientist at Bosch | MSc Data Science Graduate</div>
+        <div class="contact-info">
+            📧 rookie_yang@outlook.com | 📱 (+86) 136-6512-2789 | 📍 Jiangsu, China
+        </div>
+        <p style="margin-top: 15px; text-align: left; color: #666;">
+            <strong>Bio:</strong> I am a Data Scientist specializing in Computer Vision and Machine Learning, currently working at Bosch RBCD/TEF4. With a Master's degree from the University of Glasgow and a strong foundation in big data technology, I focus on developing AI solutions for industrial process optimization and automatic optical inspection (AOI).
+        </p>
+    </header>
+
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="job-item">
+            <div class="clearfix">
+                <h3>Data Scientist <span class="date-location">Apr 2025 - Present</span></h3>
+                <strong>Bosch Powertrain Systems Co., Ltd.</strong>
+            </div>
+            <ul>
+                <li><strong>Algorithm Development:</strong> Invent, design, and develop computer vision and machine learning algorithms for Automatic Optical Inspection (AOI) and AI-driven process optimization projects.</li>
+                <li><strong>Solution Architecture:</strong> Design and implement AI/ML architectures to ensure data quality, enable self-learning of patterns/trends, and identify operational processes suitable for automation.</li>
+                <li><strong>Project Leadership:</strong> Lead project teams to analyze customer requirements, define data collection concepts, and coordinate AI-related work packages in manufacturing areas.</li>
+                <li><strong>Full-Cycle Development:</strong> Manage the entire development process from proof of concept (PoC) to serial implementation, collaborating with IT and product experts to improve system operational efficiency.</li>
+            </ul>
+        </div>
+
+        <div class="job-item" style="margin-top: 20px;">
+            <div class="clearfix">
+                <h3>Data Analytics Intern <span class="date-location">Sep 2024 - Mar 2025</span></h3>
+                <strong>Bosch Powertrain Systems Co., Ltd.</strong>
+            </div>
+            <ul>
+                <li><strong>Data Pipeline Construction:</strong> Developed visual mapping software and realized automatic data pipelines by collecting and processing raw data from MES systems and Databricks.</li>
+                <li><strong>Production Optimization:</strong> Utilized data science techniques to explore data value, discover production issues, and optimize production line processes.</li>
+                <li><strong>System Maintenance:</strong> Handled backup processing of abnormal data in distributed storage servers and updated cluster server configurations to ensure data security.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        
+        <div class="edu-item">
+            <div class="clearfix">
+                <h3>University of Glasgow (QS Top 100) <span class="date-location">Sep 2023 - Sep 2024</span></h3>
+            </div>
+            <div><strong>MSc in Data Science</strong> | Classification: Merit</div>
+            <div>Core Courses: Machine Learning, Deep Learning, Big Data Technology, Information Visualization, NLP.</div>
+        </div>
+
+        <div class="edu-item" style="margin-top: 15px;">
+            <div class="clearfix">
+                <h3>Nantong University <span class="date-location">Sep 2019 - Jun 2023</span></h3>
+            </div>
+            <div><strong>B.Eng in Data Science and Big Data Technology</strong> | GPA: 4.12/5.00 (Rank: 1/65)</div>
+            <div>Honors: National Scholarship (2020), First Class Scholarship (3 times), Outstanding Graduate.</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects & Research</h2>
+        <div class="project-item">
+            <h3>Research on Bike-Sharing Scheduling <span class="date-location">May 2021 - Aug 2022</span></h3>
+            <div><em>National-Level College Students' Innovation Training Program | Principal Investigator</em></div>
+            <ul>
+                <li>Led a team of five; developed machine learning algorithms and predictive models; participated in website back-end construction.</li>
+                <li>Achievements: Secured 3 software copyrights, 1 IEEE conference paper, and 1 patent (preliminary examination).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python (Proficient), Java, C++, Scala.</li>
+            <li><strong>AI & Deep Learning:</strong> PyTorch, TensorFlow, Computer Vision, Object Detection (SSD, Yolo, Faster-RCNN), CNN/RNN/Transformers.</li>
+            <li><strong>Big Data & Tools:</strong> Hadoop, Spark, Databricks, Plotly (Visualization), OpenCV, MES Systems.</li>
+            <li><strong>Languages:</strong> Mandarin (Native), English (IELTS 7.0, CET-6).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Selected Awards</h2>
+        <ul>
+            <li><strong>2023:</strong> Outstanding Graduates of Nantong University; Outstanding Graduation Design.</li>
+            <li><strong>2022:</strong> Second Prize in C/C++ Programming (National Final of Blue Bridge Cup).</li>
+            <li><strong>2020:</strong> National Scholarship; First Prize in C/C++ Programming (Jiangsu Region).</li>
+        </ul>
+    </section>
+</div>
+
 </body>
 </html>
