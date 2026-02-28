@@ -50,7 +50,10 @@
         
         /* 列表样式 */
         ul { margin-top: 5px; padding-left: 20px; }
-        li { margin-bottom: 8px; } /* 稍微增加了一点行距，让长段落更易读 */
+        li { margin-bottom: 8px; }
+
+        /* 新增：项目标题的小样式 */
+        .project-title { margin: 15px 0 5px 0; color: #2c3e50; font-size: 1.05em; border-left: 3px solid #2980b9; padding-left: 8px;}
 
         /* 清除浮动 */
         .clearfix::after { content: ""; clear: both; display: table; }
@@ -82,20 +85,25 @@
         <div class="job-item">
             <div class="clearfix">
                 <h3>Data Scientist <span class="date-location">Apr 2025 - Present</span></h3>
-                <strong>Bosch Powertrain Systems (PS) / Business Digital Organization (BDO)</strong>
+                <strong>Bosch Powertrain Systems (RBCD/TEF4 & PS/BDO Solution Consulting Team)</strong>
             </div>
+            
             <ul>
-                <li><strong>EBS EOL Leakage Test AI Optimization:</strong> Developed and deployed a Prior-Aware curve fitting AI model to replace traditional physical models. Significantly reduced testing Cycle Time (CT) while strictly controlling False Positive/Negative risks (Zero Escapes). Managed the end-to-end lifecycle from data analysis to Safe Launch, successfully <strong>saving approximately 3,000,000 RMB in equipment investment</strong>.</li>
-                
+                <li><strong>Algorithm Development:</strong> Invent, design, and develop computer vision and machine learning algorithms for Automatic Optical Inspection (AOI) and AI-driven process optimization projects.</li>
+                <li><strong>Solution Architecture:</strong> Design and implement AI/ML architectures to ensure data quality, enable self-learning of patterns/trends, and identify operational processes suitable for automation.</li>
+                <li><strong>Project Leadership:</strong> Lead project teams to analyze customer requirements, define data collection concepts, and coordinate AI-related work packages in manufacturing areas.</li>
+                <li><strong>Full-Cycle Development:</strong> Manage the entire development process from proof of concept (PoC) to serial implementation, collaborating with IT and product experts to improve system operational efficiency.</li>
+            </ul>
+
+            <h4 class="project-title">Key Projects & Achievements:</h4>
+            <ul style="margin-top: 0;">
+                <li><strong>EBS EOL Leakage Test AI Optimization:</strong> Developed and deployed a Prior-Aware curve fitting AI model to replace traditional physical models. Significantly reduced testing Cycle Time (CT) while strictly controlling False Positive/Negative risks (Zero Escapes), successfully <strong>saving approximately 3,000,000 RMB in equipment investment</strong>.</li>
                 <li><strong>Smart Roll Change Digital Twin System:</strong> Architected a digital twin and algorithmic solution to monitor scrap rates and optimize material change scheduling. Increased material data transparency, optimized material change loss by >20%, and successfully <strong>released direct labor capacity valued at ~210,000 RMB/year</strong>.</li>
-                
-                <li><strong>Causal AI-Based Process Development Hub:</strong> Spearheaded the development of a next-generation process hub leveraging Causal Inference AI to upgrade traditional experience-driven DOE (Design of Experiments). Enabled automated process data collection and reusable AI model integration. Recognized as a <strong>strategic project for the Bosch China region</strong> and won the prestigious <strong>2026 RBCD Award</strong>.</li>
-                
-                <li><strong>AI Solution Architecture:</strong> Design AI/ML architectures to ensure data quality, coordinate cross-functional AI-related work packages, and drive Industry 4.0 digital transformation from proof of concept (PoC) to serial manufacturing implementation.</li>
+                <li><strong>Causal AI-Based Process Development Hub:</strong> Spearheaded the development of a next-generation process hub leveraging Causal Inference AI to upgrade traditional experience-driven DOE (Design of Experiments). Recognized as a <strong>strategic project for the Bosch China region</strong> and won the prestigious <strong>2026 RBCD Award</strong>.</li>
             </ul>
         </div>
 
-        <div class="job-item" style="margin-top: 20px;">
+        <div class="job-item" style="margin-top: 25px;">
             <div class="clearfix">
                 <h3>Data Analytics Intern <span class="date-location">Sep 2024 - Mar 2025</span></h3>
                 <strong>Bosch Powertrain Systems Co., Ltd.</strong>
@@ -144,7 +152,8 @@
         <h2>Skills</h2>
         <ul>
             <li><strong>Programming Languages:</strong> Python (Proficient), Java, C++, Scala.</li>
-            <li><strong>AI & Deep Learning:</strong> PyTorch, TensorFlow, Computer Vision, Object Detection (SSD, Yolo, Faster-RCNN), CNN/RNN/Transformers, Causal AI.</li> <li><strong>Big Data & Tools:</strong> Hadoop, Spark, Databricks, Plotly (Visualization), OpenCV, MES Systems.</li>
+            <li><strong>AI & Deep Learning:</strong> PyTorch, TensorFlow, Computer Vision, Object Detection (SSD, Yolo, Faster-RCNN), CNN/RNN/Transformers, Causal AI.</li>
+            <li><strong>Big Data & Tools:</strong> Hadoop, Spark, Databricks, Plotly (Visualization), OpenCV, MES Systems.</li>
             <li><strong>Languages:</strong> Mandarin (Native), English (IELTS 7.0, CET-6).</li>
         </ul>
     </section>
@@ -152,7 +161,8 @@
     <section>
         <h2>Selected Awards</h2>
         <ul>
-            <li><strong>2026:</strong> RBCD Award (for Causal AI Process Hub Project).</li> <li><strong>2023:</strong> Outstanding Graduates of Nantong University; Outstanding Graduation Design.</li>
+            <li><strong>2026:</strong> RBCD Award (for Causal AI Process Hub Project).</li>
+            <li><strong>2023:</strong> Outstanding Graduates of Nantong University; Outstanding Graduation Design.</li>
             <li><strong>2022:</strong> Second Prize in C/C++ Programming (National Final of Blue Bridge Cup).</li>
             <li><strong>2020:</strong> National Scholarship; First Prize in C/C++ Programming (Jiangsu Region).</li>
         </ul>
